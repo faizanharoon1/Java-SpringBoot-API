@@ -2,18 +2,15 @@ package in.autobahn.api;
 
 import org.springframework.web.bind.annotation.RestController;
 
-import in.autobahn.core.Vehicle;
-
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-
 
 @RestController
 public class VehiclesRestController {
-@GetMapping("/vehicles")
-public Vehicle getVehicles() {
-	Vehicle v1= new Vehicle("Toyota","",true, true);
-    return v1;
-}
+	@GetMapping("/vehicle")
+	public ResponseEntity<String> getAll() {
+		return new ResponseEntity<>("dd", HttpStatus.OK);
+	}
 
 }
