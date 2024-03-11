@@ -1,4 +1,4 @@
-package in.autobahn.api;
+package in.autobahn.controllers;
 
 import org.springframework.web.bind.annotation.RestController;
 
